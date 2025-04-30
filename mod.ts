@@ -1,4 +1,4 @@
-import { Class, ConstructableClass, Injector } from "./injector.ts";
+import { type Class, type ConstructableClass, Injector } from "./injector.ts";
 
 /** Global injector. */
 const globalInjector: Injector = new Injector();

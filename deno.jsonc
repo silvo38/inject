@@ -1,5 +1,17 @@
 {
+  "name": "@silvo38/inject",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./mod.ts",
   "lock": true,
+  "publish": {
+    "include": [
+      "README.md",
+      "LICENSE",
+      "injector.ts",
+      "mod.ts"
+    ]
+  },
   "imports": {
     "@std/expect": "jsr:@std/expect@^1.0.15",
     "@std/testing": "jsr:@std/testing@^1.0.11"

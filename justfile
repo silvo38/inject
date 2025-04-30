@@ -1,7 +1,11 @@
 test:
   deno test
 
-presubmit:
+presubmit: test
   deno fmt
-  deno test
   deno lint
+
+publish: presubmit
+  deno publish --dry-run
+  read -r -p "Press ENTER to publish:" response
+  deno publish
